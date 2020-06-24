@@ -8,6 +8,15 @@ body {
     margin: 0 auto;
 }
 
+h2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+
 .logo {
     width: 55px;
 }
@@ -41,10 +50,6 @@ nav li a {
     color: black;
 }
 
-h1 {
-    text-align: center;
-}
-
 .cart_button {
     font-size: 16px;
     padding: 3px 6px;
@@ -53,20 +58,54 @@ h1 {
     border: 0.5px solid black;
 }
 
-.cart_button::before {
-    content: '';
-    display: block;
-    background-image: url("../img/shopping-cart.svg") center center/cover no-repeat;
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-}
-
 .cart_button:hover {
     background-color: lightgreen;
     transition: 0.7s;
 }
 
 .shop_info {
+    text-align: center;
+}
+
+.choise {
+    text-align: center;
+}
+
+.choice_card {
+    margin: 0;
+}
+
+.choise_img {
+    width: 100%;
+    margin: 0;
+}
+
+@media (min-width: 500px) {
+    .choise {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+    .shop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 750px) {
+    .choise {
+        grid-template-columns: 1fr 1fr;
+    }
+    .shop {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.card_img {
+    width: 100%;
+}
+
+.product_card div {
     text-align: center;
 }
