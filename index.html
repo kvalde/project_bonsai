@@ -6,6 +6,7 @@
     <title>Bonsai Shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -29,65 +30,124 @@
     </section>
     <h2>Choise Of The Month</h2>
     <section class="choise">
-        <div class="choice_card">
-            <img src="img/light_green_bonsai.jpg" alt="light green bonsai" class="choise_img">
-            <div class="choise_product_name">Light Green Bonsai</div>
-            <div class="choise_price">300$</div>
-            <button class="choise_button">Add To Cart</button>
-        </div>
-        <div class="choice_card">
-            <img src="img/rose_bonsai.jpg" alt="rose bonsai" class="choise_img">
-            <div class="choise_product_name">Rose Bonsai</div>
-            <div class="choise_price">300$</div>
-            <button class="choise_button">Add To Cart</button>
-        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card col-12">
+                    <img src="img/brown_bonsai.jpg" class="card-img-top" alt="brown bonsai">
+                    <div class="card-body">
+                      <h5 class="card-title">Brown Bonsai</h5>
+                      <p class="card-text">300$</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card col-12">
+                    <img src="img/brown_bonsai.jpg" class="card-img-top" alt="brown bonsai">
+                    <div class="card-body">
+                      <h5 class="card-title">Brown Bonsai</h5>
+                      <p class="card-text">300$</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card col-12">
+                    <img src="img/brown_bonsai.jpg" class="card-img-top" alt="brown bonsai">
+                    <div class="card-body">
+                      <h5 class="card-title">Brown Bonsai</h5>
+                      <p class="card-text">300$</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     </section>
     <h2>Our Products</h2>
-    <section class="shop">
-        <div class="product_card">
-            <img src="img/green_bonsai.jpg" alt="green bonsai" class="card_img">
-            <div class="product_name">green bonsai</div>
-            <div class="card_price">300$</div>
-            <button class="card_button">Add To Cart</button>
-        </div>
-        <div class="product_card">
-            <img src="img/brown_bonsai.jpg" alt="brown bonsai" class="card_img">
-            <div class="product_name">brown_bonsai</div>
-            <div class="card_price">300$</div>
-            <button class="card_button">Add To Cart</button>
-        </div>
-        <div class="product_card">
-            <img src="img/light_green_bonsai.jpg" alt="light_green_bonsai" class="card_img">
-            <div class="product_name">light green bonsai</div>
-            <div class="card_price">300$</div>
-            <button class="card_button">Add To Cart</button>
-        </div>
-        <div class="product_card">
-            <img src="img/rose_bonsai.jpg" alt="rose bonsai" class="card_img">
-            <div class="product_name">rose_bonsai</div>
-            <div class="card_price">300$</div>
-            <button class="card_button">Add To Cart</button>
-        </div>
-        <div class="product_card">
-            <img src="img/chinise_bonsai.jpg" alt="chinise bonsai" class="card_img">
-            <div class="product_name">chinise bonsai</div>
-            <div class="card_price">300$</div>
-            <button class="card_button">Add To Cart</button>
-        </div>
-        <div class="product_card">
-            <img src="img/rose_bonsai.jpg" alt="rose bonsai" class="card_img">
-            <div class="product_name">rose bonsai</div>
-            <div class="card_price">300$</div>
-            <button class="card_button">Add To Cart</button>
+    <section class="shop container">
+        <div class="row">
+            <div class="card col-sm-12 col-md-6 col-lg-4">
+                <img src="img/brown_bonsai.jpg" class="card-img-top" alt="brown bonsai">
+                <div class="card-body">
+                  <h5 class="card-title">Brown Bonsai</h5>
+                  <p class="card-text">300$</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4">
+                <img src="img/brown_bonsai.jpg" class="card-img-top" alt="brown bonsai">
+                <div class="card-body">
+                  <h5 class="card-title">Brown Bonsai</h5>
+                  <p class="card-text">300$</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4">
+                <img src="img/brown_bonsai.jpg" class="card-img-top" alt="brown bonsai">
+                <div class="card-body">
+                  <h5 class="card-title">Brown Bonsai</h5>
+                  <p class="card-text">300$</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4">
+                <img src="img/brown_bonsai.jpg" class="card-img-top" alt="brown bonsai">
+                <div class="card-body">
+                  <h5 class="card-title">Brown Bonsai</h5>
+                  <p class="card-text">300$</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4">
+                <img src="img/brown_bonsai.jpg" class="card-img-top" alt="brown bonsai">
+                <div class="card-body">
+                  <h5 class="card-title">Brown Bonsai</h5>
+                  <p class="card-text">300$</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4">
+                <img src="img/brown_bonsai.jpg" class="card-img-top" alt="brown bonsai">
+                <div class="card-body">
+                  <h5 class="card-title">Brown Bonsai</h5>
+                  <p class="card-text">300$</p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
         </div>
     </section>
     <section class="contact_us_block">
         <h2>Contact Us</h2>
-        <form class="contact_form" action="#">
-            <input type="text" placeholder="Your e-mail">
-            <textarea name="message" cols="30" rows="10" placeholder="Your message"></textarea>
-            <input type="submit">
-        </form>
+        <form>
+            <div class="form-group">
+              <label for="email-input">Email address</label>
+              <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="name-input">Email address</label>
+                <input type="#" class="form-control" id="name-input" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="message-form">Your message</label>
+              <textarea class="form-control" id="message-form" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
     </section>
     <footer>
         <div class="find_us">
@@ -100,5 +160,9 @@
         <hr>
         <div>(C) Bonsai Shop</div>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
