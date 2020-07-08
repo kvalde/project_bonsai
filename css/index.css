@@ -69,6 +69,7 @@ nav li a {
     text-align: center;
     background-color: #b7fca2;
     padding: 15px;
+    margin-bottom: 15px;
 }
 
 .choise {
@@ -153,4 +154,9 @@ footer hr {
 nav a:hover{
     text-decoration: none;
     color: black; 
+}
+
+.choise .card {
+    padding: 25px;
+    background-color: #ffffff;
 }
