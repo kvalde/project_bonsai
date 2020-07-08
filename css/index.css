@@ -75,48 +75,8 @@ nav li a {
     text-align: center;
 }
 
-.choice_card {
-    margin: 0;
-}
-
-.choise_img {
-    width: 100%;
-    margin: 0;
-}
-
-@media (min-width: 500px) {
-    .choise {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 5px;
-    }
-    .shop {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-    }
-}
-
-@media (min-width: 750px) {
-    .choise {
-        grid-template-columns: 1fr 1fr;
-    }
-    .shop {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 .shop {
     padding: 10px;
-    background-color: #b7fca2;
-}
-
-.card_img {
-    width: 100%;
-}
-
-.product_card div {
-    text-align: center;
 }
 
 .contact_us_block {
@@ -154,4 +114,43 @@ footer {
 
 footer hr {
     border: 1px solid black;
+}
+
+.card {
+    background-color: #b7fca2;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.shop .btn {
+    background-color: transparent;
+    color: #000000;
+    border: #000000 solid 1px;
+}
+
+.shop .btn:hover {
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.contact_us_block {
+    text-align: center;
+}
+
+.contact_us_block .btn {
+    background-color: transparent;
+    color: #000000;
+    border: #000000 solid 1px;
+}
+
+.contact_us_block .btn:hover {
+    background-color: #b7fca2;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: black; 
 }
