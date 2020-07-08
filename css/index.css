@@ -160,3 +160,7 @@ nav a:hover{
     padding: 25px;
     background-color: #ffffff;
 }
+
+.bg-light {
+    background-color: #ffffff!important;
+}
